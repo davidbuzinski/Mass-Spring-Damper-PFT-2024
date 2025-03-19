@@ -21,7 +21,7 @@ plan("setupCompiler").Inputs = "buildutils/installMinGW.m";
 %% Build all mex files and place them in the toolbox folder
 plan("mex:convec") = MexTask("mex/convec.c","toolbox");
 plan("mex:yprime") = MexTask("mex/yprime.cpp","toolbox");
-plan("mex").Dependencies = "setupCompiler";
+% plan("mex").Dependencies = "setupCompiler";
 
 
 %% Setup test, example test, and integration test tasks
